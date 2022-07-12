@@ -1,0 +1,83 @@
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 3.375rem 2rem;
+}
+
+.logo {
+  max-width: 720px;
+  margin-top: 2rem;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.posts {
+  max-width: 720px;
+  margin: auto;
+  margin-bottom: 3.375rem;
+
+
+  a{
+    display: block;
+
+    & + a {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+    }
+
+    strong {
+        display: block;
+        font-size: 1.75rem;
+        margin-top: 1rem;
+        line-height: 2rem;
+
+        transition: color .2s;
+    }
+
+    p {
+      color: var(--body);
+      font-size: 1.125rem;
+      margin-top: 0.5rem;
+      line-height: 1.625rem;
+    }
+
+    &:hover strong{
+        color: var(--highlight);
+    }
+
+    ul {
+      list-style: none;
+      margin-top:1.5rem;
+      display: flex;
+
+      & li {
+        font-size:0.875rem;
+
+        & svg {
+          margin-right: 0.5rem;
+        }
+
+        & + li {
+          margin-left: 1.625rem;
+        }
+      }
+    }
+  }
+}
+
+.keepRolling {
+  max-width: 720px;
+  margin: auto;
+  cursor: pointer;
+
+  button {
+    font-size: 1.125rem;
+    color: var(--highlight);
+    background: transparent;
+    border: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
